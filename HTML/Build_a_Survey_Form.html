@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="/CSS/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>freeCodeCamp Survey Form</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <div class="container">
+      <form action="">
+        <fieldset>
+          <label for="name"
+            >Name
+            <input type="text" name="name" id="name" />
+          </label>
+          <label for="email"
+            >Email
+            <input type="email" name="email" id="email" />
+          </label>
+          <label for="age" name="age"
+            >Age (optional)
+            <input type="text" name="age" id="age" />
+          </label>
+          <label for="role"
+            >Which option best describes your current role?
+            <select name="role" id="role">
+              <option value=""></option>
+              <option value="1">Part Time</option>
+              <option value="2">Student</option>
+              <option value="3">Full Time</option>
+              <option value="4">Other</option>
+            </select>
+          </label>
+          <label>
+            Would you recommend freeCodeCamp to a friend?<br>
+            <label  class=" recommend"></label><input type="radio" name="recommend"  />  Definitely<label>
+                <label  class=" recommend"></label><input type="radio" name="recommend"  />  Maybe</label>
+                <label  class=" recommend"> <input type="radio" name="recommend"  />  Not Sure</label>
+          </label>
+          </label>
+          <label>Any suggestions
+          </label>
+          <textarea></textarea>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/Images/5605216.jpg);
+}
+
+h1,
+p {
+  text-align: center;
+  padding: 0.5em;
+}
+
+input {
+  display: block;
+}
+
+fieldset {
+  padding: 0.5em;
+  max-width: 60%;
+  padding: 20px;
+
+  background-color: #dbbfff;
+  border-radius: 3px;
+}
+form {
+  margin-left: 25%;
+}
+input[type="radio"] {
+  display: inline-flex;
+}
+select {
+  display: block;
+}
+
+.recommend {
+  display: block;
+}
+label {
+  display: block;
+  padding-bottom: 10px;
+}
