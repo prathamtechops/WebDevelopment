@@ -1,0 +1,20 @@
+:root {
+  --gradient: linear-gradient(90deg, #ee6352, purple, #ee6352);
+}
+body {
+  background-image: var(--gradient);
+  background-size: 300%;
+  animation: bg-animation 2s infinite alternate;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
