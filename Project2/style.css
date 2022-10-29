@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-image: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 2em;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    gap: 10px;
+}
+
+#text {
+    width: 80vw;
+}
+
+.btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #eee;
+    text-align: right;
+}
+
+#purple {
+    background: purple;
+}
+
+#blue {
+    background: blue;
+}

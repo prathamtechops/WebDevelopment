@@ -1,106 +1,106 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 main {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 nav,
 footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  color: #fff;
-  flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+    flex: 1;
 }
 ul {
-  display: flex;
-  gap: 10px;
-  text-decoration: none;
-  list-style-type: none;
-  color: rgb(221, 202, 202);
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(221, 202, 202);
 }
 header,
 footer {
-  background-color: #1f2937;
+    background-color: #1f2937;
 }
 
 .front {
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  padding: 50px;
-  gap: 20px;
-  background-color: #1f2937;
-  align-items: center;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 50px;
+    gap: 20px;
+    background-color: #1f2937;
+    align-items: center;
 }
 
 .image {
-  background-color: grey;
-  margin-right: 100px;
-  width: 40%;
-  height: 200px;
+    background-color: grey;
+    margin-right: 100px;
+    width: 40%;
+    height: 200px;
 }
 
 h1 {
-  color: #fff;
+    color: #fff;
 }
 .content > p {
-  color: rgba(255, 255, 255, 0.562);
+    color: rgba(255, 255, 255, 0.562);
 }
 
 .info {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
 h2 {
-  margin: 15px;
+    margin: 15px;
 }
 
 img {
-  width: 100px;
-  height: 100px;
+    width: 100px;
+    height: 100px;
 }
 .heading {
-  text-align: center;
+    text-align: center;
 }
 .in {
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote {
-  background-color: rgba(173, 152, 152, 0.759);
-  margin-top: 20px;
-  padding: 50px;
-  margin-bottom: 30px;
+    background-color: rgba(173, 152, 152, 0.759);
+    margin-top: 20px;
+    padding: 50px;
+    margin-bottom: 30px;
 }
 .quote > p {
-  text-align: right;
-  padding: 10px;
+    text-align: right;
+    padding: 10px;
 }
 
 .action {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  background-color: rgb(148, 148, 202);
-  margin: 0 50px;
-  border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(148, 148, 202);
+    margin: 0 50px;
+    border-radius: 4px;
 }
 
 footer {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
