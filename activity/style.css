@@ -12,39 +12,67 @@ body {
 }
 
 .outer-box {
-    width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .inner-box {
     width: 400px;
     margin: 0 auto;
     position: relative;
-    top: 40%;
+    top: 30%;
     transform: translateY(-50%);
     padding: 20px 40px;
-    background-color: #ffffff09;
-    background: linear-gradient(to top left, #ffffffff, #ffffff33);
-    backdrop-filter: blur(8px);
-    border-radius: 8px;
-    box-shadow: 2px 2px 5px #2773a5;
-    border: 2px solid black;
-    z-index: 2;
+    background: linear-gradient(
+        to top left,
+        rgba(255, 255, 255, 0.8),
+        #ffffff33
+    );
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px #000000;
+    border: 1px solid black;
+    z-index: 1;
+    transition: box-shadow ease-in 0.2s;
+    /* flex-shrink: 700px; */
+}
+
+.inner-box:hover {
+    box-shadow: 1px 5px 10px black;
 }
 
 .signup-header h1 {
     font-size: 2.5rem;
-    color: #212121;
+    color: #000000;
 }
 
-.signup-header p {
-    font-size: 0.95rem;
-    color: #555;
-    margin-top: 5px;
+input[type="text"],
+input[type="email"] {
+    background: transparent;
+    transition: 0.5s;
+    outline: none;
+    border: 2px solid black;
 }
 
-.signup-body {
-    margin: 20px 0;
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    color: black;
+}
+
+textarea {
+    background: transparent;
+    transition: 0.5s;
+    outline: none;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    margin-top: 4px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border: 3px solid rgb(0, 0, 0);
 }
 
 .signup-body p {
@@ -59,39 +87,25 @@ body {
 .signup-body p input {
     width: 100%;
     padding: 10px;
-    border: 2px solid #cccc;
-    border-radius: 4px;
-    font-size: 1rem;
+    border: 2px solid #3498db;
+    border-radius: 5px;
     margin-top: 4px;
 }
 
 .signup-body p input[type="submit"] {
-    background-color: #3498db;
+    background-color: #0099ff;
     border: none;
     color: white;
     cursor: pointer;
 }
 
 .signup-body p input[type="submit"]:hover {
-    background-color: #2773a5;
+    background-color: #0e84d3;
 }
 
-.signup-footer p {
-    color: #555;
-    text-align: center;
-}
-
-.signup-footer p a {
-    color: #2773a5;
-}
-
-.left-side {
-    margin-top: -100px;
-    /* background: linear-gradient(to top left, #00a6a6, #ffffff33); */
-    display: flex;
-    flex-direction: row;
-    width: 100wv;
-    gap: 30px;
+textarea {
+    width: 100%;
+    resize: vertical;
 }
 
 .circle {
@@ -124,4 +138,73 @@ body {
     right: 54px;
     width: 50px;
     height: 50px;
+}
+
+.outer-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-contant: center;
+    align-items: center;
+}
+
+.details {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* background: linear-gradient(to top left, #ff499e, #a8e0ff); */
+    margin-left: 50px;
+    flex-wrap: wrap;
+    /* width: 100%;s */
+    background-color: ;
+    z-index: 1;
+}
+
+.container_popup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    width: 50vw;
+    height: 50vh;
+    background: white;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgba(0, 0, 0, 1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.open_Popup {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    background: cyan;
+    color: black;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
