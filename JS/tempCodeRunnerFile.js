@@ -1,1 +1,0 @@
-console.log(computer_choices[random]);
